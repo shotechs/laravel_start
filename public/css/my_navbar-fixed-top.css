@@ -1,0 +1,37 @@
+body {
+  min-height: 2000px;
+  padding-top: 50px;
+}
+
+.socal_btn 
+{
+	width: 32px; 
+	height: 32px;
+	
+	}
+
+
+	 .site_btn
+{
+	width: 32px; 
+	height: 32px;
+	margin-right:10px;
+	margin-top: -5px;
+	margin-bottom: 0%;
+	}
+
+	@media (max-width: 600px) {
+  .site_btn
+{
+	width: 32px; 
+	height: 32px;
+	margin-right:10px;
+	margin-top: -8%;
+	margin-bottom: 0%;
+	}
+}
+	
+	
+	
+	
+ 
