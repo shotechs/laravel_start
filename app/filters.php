@@ -22,6 +22,15 @@ App::after(function($request, $response)
 	//
 });
 
+
+Route::filter('<span class="skimlinks-unlinked">auth.basic</span>', function()
+{
+    return Auth::basic("username");
+});
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Authentication Filters
@@ -49,10 +58,6 @@ Route::filter('auth', function()
 });
 
 
-Route::filter('<span class="skimlinks-unlinked">auth.basic</span>', function()
-{
-    return Auth::basic("username");
-});
 
 /*
 |--------------------------------------------------------------------------

@@ -16,6 +16,9 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+
+
+
 Route::get('/authtest', array('before' => '<span class="skimlinks-unlinked">auth.basic</span>', function()
 {
     return View::make('hello');
@@ -28,10 +31,13 @@ Route::group(array('prefix' => 'api/v1', 'before' => '<span class="skimlinks-unl
 });
 
 
+// string users
+Route::get('users', function()
+{
+        $users = User::all();
 
-
-
-
+    return View::make('users')->with('users', $users);
+});
 
 
 
